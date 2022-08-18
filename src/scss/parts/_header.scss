@@ -1,0 +1,213 @@
+.header {
+   height: 70px;
+   width: 100%;
+   background: $color_bg-block;
+   display: flex;
+   align-items: center;
+   &__content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__left {
+      // align-self: stretch;
+      width: 100%;
+      flex: 0 0 50%;
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      margin-right: 85px;
+      height: 50px;
+      & img {
+         object-fit: contain;
+         height: 100%;
+      }
+   }
+
+   &__menu {
+      width: 100%;
+      padding: 0 27px;
+      font-size: 20px;
+      font-weight: 400;
+      & ul {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+   }
+
+   &__right {
+      margin-left: 9%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__search {
+      margin-right: 34px;
+   }
+
+   &__group {
+      margin-right: 18px;
+   }
+
+   &__info {
+      height: 40px;
+      padding: 0 13px;
+      background-color: $color_bg-light;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 23px;
+      & > svg {
+         width: 15px;
+         height: 15px;
+      }
+      border-radius: 78px;
+   }
+
+   &__info-ava {
+      width: 36px;
+      height: 36px;
+      background-color: $color_bg-dark;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__add {
+      position: relative;
+      background-color: $color_bg-dark;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      & div {
+         position: absolute;
+         background-color: $color_bg-light;
+         width: 10px;
+         height: 2px;
+         border-radius: 1px;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         &:first-child {
+            transform: translate(-50%, -50%) rotate(90deg);
+         }
+      }
+      &_close {
+         transform: rotate(45deg);
+      }
+   }
+
+   &__set {
+      border-left: 2px solid $color_bg-dark;
+      padding-left: 13px;
+   }
+
+   &__wallet {
+      position: relative;
+      padding: 5px 6px 5px 4px;
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      background-color: $color_bg-light;
+   }
+
+   &__wallet-plus {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -40%);
+      width: 13px;
+      height: 14px;
+      border-radius: 0 50% 50% 0;
+      background-color: $color_bg-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__wallet-circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid $color_bg-dark;
+      & div {
+         position: absolute;
+         background-color: $color_bg-dark;
+         width: 6px;
+         height: 1px;
+         border-radius: 1px;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         &:first-child {
+            transform: translate(-50%, -50%) rotate(90deg);
+         }
+      }
+   }
+
+   &__user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__ava {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: $color_bg-light;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__user-name {
+      position: relative;
+      left: -4px;
+      // top: 50%;
+      // right: 0;
+      // transform: translate(90%, -50%);
+      width: 74px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color_bg-light;
+   }
+
+   &__ring {
+   }
+}
+.container {
+}
+.burger {
+   position: relative;
+   width: 25px;
+   height: 25px;
+   & div {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      border-radius: 1.5px;
+      background: $color_white;
+      left: 0;
+      &:first-child {
+         top: 3px;
+      }
+      &:nth-last-child(2) {
+         top: 50%;
+         transform: translate(0, -50%);
+      }
+      &:last-child {
+         bottom: 3px;
+      }
+   }
+}
