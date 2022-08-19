@@ -1,0 +1,40 @@
+@include('./html/_head.html',{
+'title':'Main'
+})
+
+<body>
+   <!-- <div class="wrapper"> -->
+   @include('./html/_header_login.html')
+   <main>
+      <div class="container">
+         <div class="ranked-content">
+            <div class="best-players">Лучие игроки прошлого сезона</div>
+            <div class="ranked">
+               <div class="ranked__header">
+                  <ul class="ranked__menu">
+                     <li><a href="#">Место</a></li>
+                     <li><a href="#">Звание</a></li>
+                     <li><a href="#">Победы</a></li>
+                     <li><a href="#">Винрейт</a></li>
+                     <li><a href="#">Убийства</a></li>
+                     <li><a href="#">Смерти</a></li>
+                     <li><a href="#">КД</a></li>
+                     <li><a href="#">Кол - во опыта</a></li>
+                  </ul>
+                  <div class="ranked__btn">
+                     <span>Переключение режимов</span>
+                  </div>
+               </div>
+            </div>
+            <div class="friends">Друзья онлайн</div>
+         </div>
+      </div>
+   </main>
+   <!-- @include('./html/_footer.html') -->
+   </div>
+   </div>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
