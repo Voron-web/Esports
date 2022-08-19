@@ -1,0 +1,112 @@
+.profile {
+   padding: 102px 0 179px 194px;
+   display: flex;
+   font-size: 18px;
+
+   &__content {
+      width: 1000px;
+   }
+
+   &__header {
+      display: flex;
+   }
+
+   &__avatar {
+      color: $color_black;
+      margin-right: 106px;
+      // width: 175px;
+      height: 175px;
+      flex: 0 0 175px;
+      background-color: #d9d9d9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__col {
+      // width: 100%;
+      flex: 0 0 50%;
+      &:last-child {
+         // justify-self: end;
+         text-align: end;
+      }
+      &:first-child {
+         & p {
+            position: relative;
+            &:first-child {
+               // color: red;
+               &::after {
+                  content: url("../img/profile/icon.png");
+                  position: absolute;
+                  width: 30px;
+                  height: 30px;
+                  left: 220px;
+               }
+            }
+         }
+         & p:nth-child(3) {
+            margin-top: 43px;
+         }
+         & p:nth-child(4) {
+            margin-top: 43px;
+         }
+      }
+      &:last-child {
+         & p:nth-child(2) {
+            margin-top: 60px;
+         }
+      }
+   }
+
+   &__progress {
+      margin-top: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 125px;
+      background-color: #d9d9d9;
+   }
+
+   &__baner {
+      margin-top: 43px;
+      width: 100%;
+      height: 1100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 90px;
+      background-color: #d9d9d9;
+   }
+
+   &__comment {
+      margin-top: 57px;
+      width: 100%;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      padding-left: 17px;
+      background-color: #d9d9d9;
+      color: $color_black;
+   }
+
+   &__aside {
+      margin-top: 265px;
+      margin-left: 56px;
+      padding: 0 0 42px 28px;
+      width: 300px;
+      height: fit-content;
+      background-color: #d9d9d9;
+      color: $color_black;
+      & li:not(:first-child) {
+         margin-top: 49px;
+      }
+   }
+}

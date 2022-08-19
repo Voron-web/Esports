@@ -1,0 +1,56 @@
+@include('./html/_head.html',{
+'title':'Главная'
+})
+
+<body>
+   @include('./html/_header.html')
+   <main class="main">
+      <div class="container">
+         <div class="profile">
+            <div class="profile__content">
+               <div class="profile__header">
+                  <div class="profile__avatar">
+                     Аватар
+                  </div>
+                  <div class="profile__info">
+                     <div class="profile__col">
+                        <p>Ник И АУНТИФИКАТОР
+                           <!-- <img src="./img/profile/icon.png" alt=""> -->
+                        </p>
+                        <p>Дата регистрации</p>
+                        <p>Звание</p>
+                        <p>Играет сейчас</p>
+                     </div>
+                     <div class="profile__col">
+                        <p>Стрим*</p>
+                        <p>Ссылки на соц сети и т.д</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="profile__progress">
+                  Достижения
+               </div>
+               <div class="profile__baner">Банер</div>
+               <div class="profile__comment">
+                  Коментарии
+               </div>
+            </div>
+            <aside class="profile__aside">
+               <ul>
+                  <li><a href="#">Статистика</a></li>
+                  <li><a href="#">Награды</a></li>
+                  <li><a href="#">Выигрыши</a></li>
+                  <li><a href="#">Друзья</a></li>
+                  <li><a href="#">Галерея Скриншотов</a></li>
+               </ul>
+            </aside>
+         </div>
+      </div>
+   </main>
+   <!-- @include('./html/_footer.html') -->
+   </div>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

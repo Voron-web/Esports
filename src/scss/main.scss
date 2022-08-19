@@ -6,6 +6,7 @@
 @import "./parts/newsline";
 @import "./parts/maps";
 @import "./parts/ranked";
+@import "./parts/profile";
 // * {
 //    border: 1px solid red;
 // }
@@ -21,7 +22,7 @@ body {
    font-family: "Roboto", sans-serif;
    background: #0c1226;
    color: $color_white;
-   overflow: hidden;
+   // overflow: hidden;
 }
 .wrapper {
    display: flex;
