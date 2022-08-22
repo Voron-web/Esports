@@ -1,0 +1,7 @@
+https://esports-chi.vercel.app/
+https://esports-chi.vercel.app/index_login.html
+https://esports-chi.vercel.app/maps.html
+https://esports-chi.vercel.app/profile.html
+https://esports-chi.vercel.app/ranked.html
+https://esports-chi.vercel.app/news.html
+https://esports-chi.vercel.app/main.html
