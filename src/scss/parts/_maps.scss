@@ -1,16 +1,24 @@
 .maps {
    font-weight: 400;
    font-size: 12px;
-   color: $color_black;
-   padding: 51px 260px 0;
+   color: $color_white;
+   padding: 51px 260px 100px;
    &__title {
+      padding: 10px 0;
+      text-align: center;
       margin: 0 auto;
-      width: 300px;
-      height: 80px;
-      background-color: #c4c4c4;
+      width: 380px;
+      // height: 97px;
+      background-color: $color_bg-block;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      border: 2px solid #1dc2e6;
+      border-radius: 78px;
+      & p:not(:last-child) {
+         margin-bottom: 5px;
+      }
    }
 
    &__col {
@@ -20,16 +28,35 @@
    }
 
    &__team {
-      padding: 31px 0 0 18px;
+      // padding: 31px 0 0 18px;
+      // padding: 23px 12px 23px 18px;
+      padding: 23px 15px;
+      position: relative;
       width: 300px;
-      height: 350px;
-      background-color: #c4c4c4;
+      height: fit-content;
+      background-color: $color_bg-block;
+   }
+   &__team-title {
+      position: absolute;
+      left: 50%;
+      // top: -100%;
+      top: -15px;
+      transform: translate(-50%, 0);
+   }
+   &__team-item {
+      height: 50px;
+      background-color: $color_bg-dark;
+      border-radius: 78px;
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
    }
 
    &__content {
+      background-color: $color_bg-block;
       // width: 600px;
-      background-color: #c4c4c4;
-      padding: 6px 15px 17px;
+      // background-color: #c4c4c4;
+      padding: 15px 17px;
    }
 
    &__content-title {
@@ -46,11 +73,62 @@
    }
 
    &__grid-item {
+      position: relative;
+      border-radius: 15px;
       width: 270px;
       height: 80px;
       & img {
-         object-fit: cover;
+         border-radius: 15px;
+         object-fit: contain;
          width: 100%;
       }
+   }
+   &__item-logo {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      & img {
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+}
+
+.team {
+   &__item {
+      &_left {
+         display: flex;
+         align-items: center;
+      }
+      &_right {
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: center;
+      }
+   }
+
+   &__logo {
+      & img {
+         object-fit: contain;
+         height: 96px;
+      }
+   }
+
+   &__name {
+      margin-left: 9px;
+   }
+
+   &__ava {
+      margin-left: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: $color_bg-light;
+      border-radius: 50%;
+   }
+   &__number {
+      margin-left: 9px;
    }
 }
