@@ -112,9 +112,11 @@
 
    &__avatar {
       position: absolute;
-      width: 400px;
-      bottom: -9px;
-      right: 116px;
+      width: 700px;
+      // bottom: -9px;
+      bottom: -100px;
+      // right: 116px;
+      right: 0;
 
       & img {
          object-fit: contain;
