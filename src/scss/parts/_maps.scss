@@ -44,7 +44,7 @@
    &__team-item {
       width: 100%;
       height: 50px;
-      background-color: $color_bg-dark;
+      background-color: $color_bg-block-dark;
       border-radius: 78px;
       &:not(:last-child) {
          margin-bottom: 10px;
@@ -163,6 +163,7 @@
       margin-top: 51px;
       display: flex;
       justify-content: center;
+      gap: 65px;
    }
    &__title {
       margin-bottom: 93px;
