@@ -119,25 +119,25 @@
       margin-right: auto;
    }
 
-   &__indicator {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      filter: blur(2px);
-      // margin-left: 20px;
-      &_online {
-         background-color: $color_bg-light;
-      }
-      &_offline {
-         background-color: #ff0000;
-      }
-   }
-
    &__rank {
       width: 200px;
       & img {
          width: 100%;
          object-fit: cover;
       }
+   }
+}
+.indicator {
+   flex: 0 0 10px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   filter: blur(2px);
+   // margin-left: 20px;
+   &_online {
+      background-color: $color_bg-light;
+   }
+   &_offline {
+      background-color: #ff0000;
    }
 }

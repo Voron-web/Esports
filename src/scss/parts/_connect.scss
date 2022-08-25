@@ -1,0 +1,83 @@
+.connect {
+   width: 1000px;
+   margin: 61px auto 300px;
+   padding: 27px 75px 0;
+   background-color: $color_bg-block;
+   border: 2px solid $color_bg-light;
+   &__block {
+      margin-bottom: 57px;
+   }
+   &__block-title {
+      margin-bottom: 26px;
+      text-align: center;
+      font-size: 40px;
+   }
+
+   &__item {
+      margin-bottom: 45px;
+      padding: 25px 17px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $color_bg-block-dark;
+      border-radius: 30px;
+   }
+
+   &__img {
+      margin-left: 16px;
+      margin-right: 20px;
+      position: relative;
+      height: 100%;
+      width: 270px;
+      border-radius: 15px;
+      & img {
+         height: 100%;
+         object-fit: contain;
+         border-radius: 15px;
+      }
+   }
+
+   &__logo {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   &__info {
+      width: 100%;
+      display: grid;
+      justify-content: space-between;
+      justify-items: center;
+
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-auto-flow: column;
+      row-gap: 5px;
+      font-size: 20px;
+      font-weight: 400;
+   }
+
+   &__server-title {
+   }
+
+   &__server-value {
+   }
+
+   &__map-title {
+   }
+
+   &__map-value {
+   }
+
+   &__host-title {
+   }
+
+   &__host-value {
+   }
+
+   &__players {
+   }
+}
