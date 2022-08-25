@@ -1,0 +1,18 @@
+.agreement {
+   padding: 100px 88px 300px 110px;
+   &__title {
+      margin-bottom: 60px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 32px;
+   }
+
+   &__text {
+      font-size: 16px;
+      font-weight: 400;
+   }
+   // Удалить после выбора соглашения
+   & p:nth-child(3) {
+      margin-top: 300px;
+   }
+}
