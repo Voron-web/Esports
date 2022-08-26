@@ -210,9 +210,53 @@
    &__ring {
       margin-left: 21px;
    }
+   &__btn-signup {
+      margin-right: 33px;
+      padding: 0 17px;
+      height: 50px;
+      color: $color_black;
+      background-color: $color_bg-light;
+      border-radius: 78px;
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      & svg {
+         // margin: auto 0;
+         margin-left: 5px;
+         width: 30px;
+         height: 30px;
+      }
+      & a {
+         display: flex;
+         align-items: center;
+      }
+   }
+
+   &__btn-signin {
+      margin-right: 227px;
+      padding: 0 20px 0 26px;
+      height: 50px;
+      border-radius: 78px;
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      background-color: $color_bg-block-dark;
+      border: 2px solid $color_bg-light;
+      & a {
+         display: flex;
+         align-items: center;
+      }
+      & img {
+         width: 30px;
+         height: 30px;
+         margin-left: 20px;
+      }
+   }
 }
-.container {
-}
+
 .burger {
    position: relative;
    width: 25px;

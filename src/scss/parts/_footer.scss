@@ -68,11 +68,10 @@
       width: 100%;
       padding: 44px 0 36px 68px;
       display: grid;
-      grid-template-columns: 370px 370px;
+      grid-template-columns: 450px 370px;
       grid-template-rows: auto auto;
       align-items: center;
       justify-items: flex-start;
-
       background-color: $color_bg-block;
       border-radius: 78px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -122,6 +121,11 @@
          object-fit: contain;
          width: 100%;
       }
+      &.w500 {
+         width: 500px;
+         bottom: 0;
+         right: 60px;
+      }
    }
 
    &__social {
@@ -142,6 +146,4 @@
 
    &__icon {
    }
-}
-.container {
 }

@@ -1,20 +1,308 @@
 @include('./html/_head.html',{
-'title':'Main'
+'title':'Sign Up'
 })
 
 <body>
    <!-- <div class="wrapper"> -->
-   @include('./html/_header_login.html')
+   @include('./html/_header_logout.html')
    <main>
       <div class="container">
-         <div class="newsline">
-            <div class="subscribe">Подписатьса на игроков</div>
-            <div class="line">Лента</div>
-            <div class="friends">Друзья онлайн</div>
+         <h1 class="signup_title">ВАША УНИКАЛЬНАЯ HvH ЛИГА</h1>
+         <p class="signup__subtitle"> Соревнуйтесь с друзьями и <span>тысячами</span> случайных игроков
+            в рейтинговых матчах, разнообразных ивентах и турнирах
+         </p>
+
+         <div class="signup__advantages">
+            <div class="advantages__item">
+               <div class="advantages__img">
+                  <img src="./img/singup/scales.png" alt="">
+               </div>
+               <div class="advantages__title">СТАБИЛЬНОСТЬ</div>
+               <div class="advantages__text">
+                  Наши сервера обеспечат Вам надежное соединение на протяжении всей игры
+               </div>
+            </div>
+            <div class="advantages__item">
+               <div class="advantages__img">
+                  <img src="./img/singup/vs.png" alt="">
+               </div>
+               <div class="advantages__title">МАТЧМЕЙКИНГ</div>
+               <div class="advantages__text">
+                  Соревнуйтесь с друзьями или <span>тысячами</span> случайных игроков в разнообразных режимах игры
+               </div>
+            </div>
+            <div class="advantages__item">
+               <div class="advantages__img">
+                  <img src="./img/singup/logo.png" alt="">
+               </div>
+               <div class="advantages__title">УНИВЕРСАЛЬНОСТЬ</div>
+               <div class="advantages__text">
+                  Открывайте кейсы, пробуйте новые режимы игры, читайте свежие новости HvH комьюнити </div>
+            </div>
+            <div class="advantages__item">
+               <div class="advantages__img">
+                  <img src="./img/singup/graf.png" alt="">
+               </div>
+               <div class="advantages__title">ПРОГРЕСС В НАВЫКАХ </div>
+               <div class="advantages__text">
+                  Отслеживайте прогресс своего скилла в удобной игровой статистике </div>
+            </div>
+            <div class="advantages__item">
+               <div class="advantages__img">
+                  <img src="./img/singup/calendar.png" alt="">
+               </div>
+               <div class="advantages__title">ИВЕНТЫ</div>
+               <div class="advantages__text">
+                  Регулярные турниры, события, розыгрыши и нововведения, точно не дадут Вам заскучать! </div>
+            </div>
+         </div>
+         <div class="signup__cards-title">
+            ПОДПИСКИ
+         </div>
+
+         <div class="signup__cards">
+
+            <div class="card">
+               <div class="card__front">
+                  <div class="card__title">SIMPLE</div>
+                  <ul class="card__list">
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Безлимитный доступ к без рейтинговым играм
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Ограниченный доступ к рейтинговым играм
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Участие в турнирах
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Несколько вариантов кастомизации профиля
+                     </li>
+                  </ul>
+                  <div class="card__cost">
+                     <span>0 HC</span>
+                     <img class="card__question" src="./img/singup/question.png" alt="">
+                  </div>
+               </div>
+               <div class="card__back">
+                  Back
+               </div>
+            </div>
+
+            <div tabindex="1" class="card">
+               <div class="card__front">
+                  <div class="card__title">PREMIUM</div>
+                  <ul class="card__list">
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Подписка Simple
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Connect на 10 игр
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Дополнительная кастомизация профиля
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Ускоренная тех. поддержка
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        2 бесплатных кейса с бустерами в месяц
+                        <img class="card__question" src="./img/singup/question.png" alt="">
+                        <!-- <img class="card__question" src="./img/singup/question.png" alt=""> -->
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Значок “Premium”
+                        <div class="card__eagle"><img src="img/singup/eagle_silver.png" alt=""></div>
+                     </li>
+                  </ul>
+                  <div class="card__cost">
+                     <span>249 HC</span>
+                     <span class="card__old-cost">390 HC</span>
+                  </div>
+               </div>
+               <div class="card__back">
+                  <div class="card__title">PREMIUM</div>
+                  <ul class="card__back-list">
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>1 месяц</span>
+                           <span>249 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>3 месяца</span>
+                           <span>690 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>6 месяцев</span>
+                           <span>1190 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>9 месяцев</span>
+                           <span>1890 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>1 год</span>
+                           <span>2290 НС</span>
+                        </div>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+
+            <div tabindex="2" class="card">
+               <div class="card__front">
+                  <div class="card__title">SPONSOR</div>
+                  <ul class="card__list">
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Подписка Premium
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Безлимитный connect
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online">
+                        </div>
+                        Дополнительная и уникальная кастомизация профиля на заказ
+                        <img class="card__question" src="./img/singup/question.png" alt="">
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Прерогативная тех. поддержка
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        4 бесплатных кейса с бустерами в месяц
+                        <img class="card__question" src="./img/singup/question.png" alt="">
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        Значок “Sponsor”
+                        <div class="card__eagle"><img src="img/singup/eagle_gold.png" alt=""></div>
+                     </li>
+                  </ul>
+                  <div class="card__cost">
+                     <span>890 HC</span>
+                     <span class="card__old-cost">1190 HC</span>
+                  </div>
+               </div>
+               <div class="card__back">
+                  <div class="card__title">SPONSOR</div>
+                  <ul class="card__back-list">
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>1 месяц</span>
+                           <span>890 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>3 месяца</span>
+                           <span>2290 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>6 месяцев</span>
+                           <span>4390 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>9 месяцев</span>
+                           <span>6890 НС</span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="indicator indicator_online"></div>
+                        <div class="card__price">
+                           <span>1 год</span>
+                           <span>8890 НС</span>
+                        </div>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div class="signup__cases-title">КЕЙСЫ</div>
+         <div class="signup__cases">
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_dial.png" alt="">
+               </div>
+            </a>
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_lose.png" alt="">
+               </div>
+            </a>
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_invite.png" alt="">
+               </div>
+            </a>
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_skeet.png" alt="">
+               </div>
+            </a>
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_weapon.png" alt="">
+               </div>
+            </a>
+            <a href="#">
+               <div class="signup__cases-item">
+                  <img src="./img/singup/cases_tap.png" alt="">
+               </div>
+            </a>
+         </div>
+         <div class="signup__cases-subtitle">
+            Не забудьте испытать удачу и выиграть <span>топовый</span> лут в <span>уникальных</span> кейсах!
          </div>
       </div>
    </main>
-   <!-- @include('./html/_footer.html') -->
+   @include('./html/_footer.html',{
+   'img':'footer_logo-eagle_g.png',
+   'class':'w500'
+   })
    </div>
    </div>
 
