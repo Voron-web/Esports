@@ -179,6 +179,12 @@
          justify-content: center;
          height: 70px;
          // border-bottom: 2px solid $color_bg-light;
+         font-weight: 500;
+         font-size: 35px;
+         color: $color_bg-light;
+         & span {
+            align-self: flex-end;
+         }
          &:first-child {
             position: relative;
             & div {
