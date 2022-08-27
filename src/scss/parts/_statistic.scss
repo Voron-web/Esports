@@ -52,26 +52,29 @@
       font-size: 20px;
    }
 
-   &__btn-simple {
+   &__btn {
       padding: 0 17px;
       height: 50px;
       border-radius: 78px;
-      color: $color_black;
-      background-color: $color_bg-light;
       display: flex;
       align-items: center;
       justify-content: center;
+      border: 2px solid $color_bg-light;
+
+      &.active {
+         color: $color_black;
+         background-color: $color_bg-light;
+      }
    }
 
-   &__btn-premium {
-      padding: 0 17px;
-      height: 50px;
-      border-radius: 78px;
-      border: 2px solid $color_bg-light;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
+   // &__btn-premium {
+   //    padding: 0 17px;
+   //    height: 50px;
+   //    border-radius: 78px;
+   //    display: flex;
+   //    align-items: center;
+   //    justify-content: center;
+   // }
 
    &__table {
       padding: 30px 150px;
