@@ -1,2 +1,2 @@
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHQuanMiXSwic291cmNlc0NvbnRlbnQiOlsiIl0sImZpbGUiOiJzY3JpcHQuanMifQ==
+document.querySelectorAll(".card").forEach(((e,c,t)=>{0!==c&&e.addEventListener("click",(()=>{e.classList.toggle("active")}))}));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzY3JpcHQuanMiXSwic291cmNlc0NvbnRlbnQiOlsiZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5jYXJkXCIpLmZvckVhY2goKChlLGMsdCk9PnswIT09YyYmZS5hZGRFdmVudExpc3RlbmVyKFwiY2xpY2tcIiwoKCk9PntlLmNsYXNzTGlzdC50b2dnbGUoXCJhY3RpdmVcIil9KSl9KSk7Il0sImZpbGUiOiJzY3JpcHQuanMifQ==
