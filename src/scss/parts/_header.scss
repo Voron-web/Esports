@@ -42,8 +42,21 @@
       }
    }
    &__menu-item {
+      position: relative;
       & a:hover {
          color: $color_bg-light;
+      }
+      &.active {
+         color: $color_bg-light;
+         &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color_bg-light;
+         }
       }
    }
 
