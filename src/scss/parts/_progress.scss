@@ -1,5 +1,5 @@
 .progress {
-   margin: 0 auto 100px;
+   margin: 0 auto 350px;
    width: 1400px;
    color: $color_white;
 
@@ -37,8 +37,6 @@
       align-items: center;
       justify-content: center;
       & img {
-         // width: 80px;
-         //   height: 80px;
          height: 100%;
          object-fit: contain;
       }

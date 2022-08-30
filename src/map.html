@@ -1,10 +1,16 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Map'
 })
 
 <body>
    <!-- <div class="wrapper"> -->
-   @include('./html/_header.html')
+   @include('./html/_header.html',{
+   'cases':'',
+   'news':'',
+   'rate':'',
+   'games':'active'
+   })
    <main>
       <div class="container">
          <div class="map">
@@ -109,11 +115,10 @@
       </div>
    </main>
    @include('./html/_footer.html',{
-   'img':'footer_logo-newer.png'
+   'img':'footer_logo-newer.png',
+   'class':'',
+   'link':'../cases.html'
    })
-   </div>
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 

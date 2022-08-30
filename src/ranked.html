@@ -1,10 +1,15 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Ranked'
 })
 
 <body>
-   <!-- <div class="wrapper"> -->
-   @include('./html/_header.html')
+   @include('./html/_header.html',{
+   'cases':'',
+   'news':'',
+   'rate':'active',
+   'games':''
+   })
    <main>
       <div class="container">
          <div class="ranked-content">
@@ -366,11 +371,10 @@
       </div>
    </main>
    @include('./html/_footer.html',{
-   'img':'footer_logo-skeet.png'
+   'img':'footer_logo-skeet.png',
+   'class':'',
+   'link':'../cases.html'
    })
-   </div>
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 

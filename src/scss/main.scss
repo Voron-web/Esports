@@ -135,18 +135,21 @@ h2 {
    width: 1450px;
    margin-bottom: 5px;
    padding-bottom: 5px;
+   // transition: height 2s;
+   cursor: pointer;
    &:hover {
       .question {
          &__point {
             border: 2.5px solid $color_bg-light;
-
             & div {
+               transition: 0.2s;
                background-color: $color_bg-light;
             }
          }
       }
    }
    &.active {
+      // transition: height 2s;
       height: auto;
       color: $color_bg-light;
       & .question__point {

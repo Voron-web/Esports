@@ -1,10 +1,16 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Статистика'
 })
 
 <body>
    <div class="wrapper">
-      @include('./html/_header.html')
+      @include('./html/_header.html',{
+      'cases':'',
+      'news':'',
+      'rate':'',
+      'games':''
+      })
       <main>
          <div class="container">
             <div class="statistic__header">
@@ -19,10 +25,10 @@
                   </div>
                </div>
                <div class="statistic__btn-block">
-                  <a href="#">
+                  <a href="./statistic-simple.html">
                      <div class="statistic__btn active">SIMPLE</div>
                   </a>
-                  <a href="#">
+                  <a href="./statistic-premium.html">
                      <div class="statistic__btn">PREMIUM & SPONSOR
                   </a>
                </div>
@@ -117,11 +123,10 @@
    </main>
    @include('./html/_footer.html',{
    'img':'footer_logo-eagle_s.png',
-   'class':'w500'
+   'class':'w500',
+   'link':'../index.html#subscription'
    })
    </div>
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 

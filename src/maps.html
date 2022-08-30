@@ -1,10 +1,16 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Maps'
 })
 
 <body>
    <!-- <div class="wrapper"> -->
-   @include('./html/_header.html')
+   @include('./html/_header.html',{
+   'cases':'',
+   'news':'',
+   'rate':'',
+   'games':'active'
+   })
    <main>
       <div class="container">
          <div class="maps">
@@ -63,52 +69,52 @@
                   <!-- <div class="maps__content-title">Вето мап</div> -->
                   <div class="maps__grid">
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map1.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map1.jpg" alt="">
                            <img src="./img/maps/logo1.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map2.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map2.jpg" alt="">
                            <img src="./img/maps/logo2.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map3.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map3.jpg" alt="">
                            <img src="./img/maps/logo3.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map4.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map4.jpg" alt="">
                            <!-- <img src="./img/maps/" alt="" class="maps__item-logo"> -->
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map5.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map5.jpg" alt="">
                            <!-- <img src="./img/maps/" alt="" class="maps__item-logo"> -->
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map6.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map6.jpg" alt="">
                            <!-- <img src="./img/maps/" alt="" class="maps__item-logo"> -->
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map7.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map7.jpg" alt="">
                            <img src="./img/maps/logo7.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map8.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map8.jpg" alt="">
                            <img src="./img/maps/logo8.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map9.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map9.jpg" alt="">
                            <img src="./img/maps/logo9.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
                      <div class="maps__grid-item">
-                        <a href="#"><img src="./img/maps/map10.jpg" alt="">
+                        <a href="./map.html"><img src="./img/maps/map10.jpg" alt="">
                            <img src="./img/maps/logo10.png" alt="" class="maps__item-logo">
                         </a>
                      </div>
@@ -162,11 +168,12 @@
 
       </div>
    </main>
+
    @include('./html/_footer.html',{
-   'img':'footer_logo-newer.png'
+   'img':'footer_logo-newer.png',
+   'class':'',
+   'link':'../cases.html'
    })
-   </div>
-   </div>
 
    <script src="./js/script.js"></script>
 </body>

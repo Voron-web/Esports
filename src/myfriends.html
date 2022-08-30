@@ -1,10 +1,16 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Friends'
 })
 
 <body>
    <div class="wrapper">
-      @include('./html/_header.html')
+      @include('./html/_header.html',{
+      'cases':'',
+      'news':'',
+      'rate':'',
+      'games':''
+      })
       <main>
          <div class="container">
             <div class="myfriends">
@@ -152,17 +158,15 @@
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
       </main>
       @include('./html/_footer.html',{
       'img':'footer_logo-newer.png',
-      'class':''
+      'class':'',
+      'link':'../cases.html'
       })
    </div>
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 

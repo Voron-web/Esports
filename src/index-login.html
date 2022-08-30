@@ -1,66 +1,23 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'Sign In'
 })
 
 <body>
    <!-- <div class="wrapper"> -->
-   @include('./html/_header_logout.html')
+
+   @include('./html/_header_logout.html',{
+   'cases':'',
+   'news':'',
+   'rate':'',
+   'games':''
+   })
    <main>
       <div class="container">
-         <!-- <h1 class="signup_title">ВАША УНИКАЛЬНАЯ HvH ЛИГА</h1>
-         <p class="signup__subtitle"> Соревнуйтесь с друзьями и <span>тысячами</span> случайных игроков
-            в рейтинговых матчах, разнообразных ивентах и турнирах
-         </p> -->
-
-         <!-- <div class="signup__advantages">
-            <div class="advantages__item">
-               <div class="advantages__img">
-                  <img src="./img/signup/scales.png" alt="">
-               </div>
-               <div class="advantages__title">СТАБИЛЬНОСТЬ</div>
-               <div class="advantages__text">
-                  Наши сервера обеспечат Вам надежное соединение на протяжении всей игры
-               </div>
-            </div>
-            <div class="advantages__item">
-               <div class="advantages__img">
-                  <img src="./img/signup/vs.png" alt="">
-               </div>
-               <div class="advantages__title">МАТЧМЕЙКИНГ</div>
-               <div class="advantages__text">
-                  Соревнуйтесь с друзьями или <span>тысячами</span> случайных игроков в разнообразных режимах игры
-               </div>
-            </div>
-            <div class="advantages__item">
-               <div class="advantages__img">
-                  <img src="./img/signup/logo.png" alt="">
-               </div>
-               <div class="advantages__title">УНИВЕРСАЛЬНОСТЬ</div>
-               <div class="advantages__text">
-                  Открывайте кейсы, пробуйте новые режимы игры, читайте свежие новости HvH комьюнити </div>
-            </div>
-            <div class="advantages__item">
-               <div class="advantages__img">
-                  <img src="./img/signup/graf.png" alt="">
-               </div>
-               <div class="advantages__title">ПРОГРЕСС В НАВЫКАХ </div>
-               <div class="advantages__text">
-                  Отслеживайте прогресс своего скилла в удобной игровой статистике </div>
-            </div>
-            <div class="advantages__item">
-               <div class="advantages__img">
-                  <img src="./img/signup/calendar.png" alt="">
-               </div>
-               <div class="advantages__title">ИВЕНТЫ</div>
-               <div class="advantages__text">
-                  Регулярные турниры, события, розыгрыши и нововведения, точно не дадут Вам заскучать! </div>
-            </div>
-         </div> -->
 
          <div class="signin__bunner">
             <img src="./img/signin/main_banner.jpg" alt="">
          </div>
-
 
          <div class="signup__cards-title">
             ПОДПИСКИ
@@ -315,32 +272,32 @@
 
          <div class="signup__cases-title">КЕЙСЫ</div>
          <div class="signup__cases">
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_dial.png" alt="">
                </div>
             </a>
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_lose.png" alt="">
                </div>
             </a>
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_invite.png" alt="">
                </div>
             </a>
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_skeet.png" alt="">
                </div>
             </a>
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_weapon.png" alt="">
                </div>
             </a>
-            <a href="#">
+            <a href="./cases.html">
                <div class="signup__cases-item">
                   <img src="./img/signup/cases_tap.png" alt="">
                </div>
@@ -353,11 +310,9 @@
    </main>
    @include('./html/_footer.html',{
    'img':'footer_logo-eagle_g.png',
-   'class':'w500'
+   'class':'w500',
+   'link':'../index.html#subscription'
    })
-   </div>
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 

@@ -1,9 +1,15 @@
+<!--  -->
 @include('./html/_head.html',{
 'title':'FAQ'
 })
 
 <body>
-   @include('./html/_header.html')
+   @include('./html/_header.html',{
+   'cases':'',
+   'news':'',
+   'rate':'',
+   'games':''
+   })
    <main class="main">
       <div class="container">
          <h2 class="how__title">Как это работает?</h2>
@@ -69,7 +75,7 @@
                обратитесь в поддержку, указав реквизиты Вашего платежа.
             </div>
          </div>
-         <div class="question-block active">
+         <div class="question-block">
             <div class="question">
                <div class="question__point">
                   <div></div>
@@ -111,10 +117,10 @@
       </div>
    </main>
    @include('./html/_footer.html',{
-   'img':'footer_logo-newer.png'
+   'img':'footer_logo-newer.png',
+   'class':'',
+   'link':'../cases.html'
    })
-   </div>
-
    <script src="./js/script.js"></script>
 </body>
 
