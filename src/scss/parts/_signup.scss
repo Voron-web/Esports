@@ -1,7 +1,7 @@
 .signup {
    // padding-bottom: 300px;
    &_title {
-      margin-top: 107px;
+      margin-top: 112px;
       text-align: center;
       font-weight: 500;
       font-size: 60px;
@@ -9,22 +9,23 @@
 
    &__subtitle {
       margin: 25px auto 0;
-      width: 753px;
+      width: 700px;
       font-size: 25px;
       text-align: center;
+      line-height: 1.15;
       & span {
          color: $color_bg-light;
       }
    }
 
    &__advantages {
-      margin: 150px 250px;
+      margin: 150px 250px 245px;
       display: flex;
       justify-content: space-between;
       gap: 30px;
    }
    &__cards {
-      padding: 0 147px;
+      padding: 0 130px;
       display: flex;
       justify-content: space-between;
       gap: 35px;
@@ -32,7 +33,7 @@
    &__cards-title {
       font-size: 43px;
       font-weight: 500;
-      margin-bottom: 107px;
+      margin-bottom: 90px;
       text-align: center;
    }
 
@@ -74,9 +75,9 @@
    }
 
    &__cases-subtitle {
-      padding-bottom: 300px;
-      margin-left: 210px;
-      margin-top: 74px;
+      padding-bottom: 390px;
+      margin-left: 190px;
+      margin-top: 76px;
       font-weight: 500;
       font-size: 35px;
       & span {
@@ -226,7 +227,8 @@
          position: relative;
          display: flex;
          align-items: flex-start;
-         line-height: 29px;
+         // line-height: 29px;
+         line-height: 1.1;
          &:not(:last-child) {
             margin-bottom: 36px;
          }

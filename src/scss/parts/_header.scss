@@ -1,4 +1,5 @@
 .header {
+   min-height: 70px;
    height: 70px;
    width: 100%;
    background: $color_bg-block;
@@ -13,6 +14,7 @@
    }
    &__left {
       // align-self: stretch;
+      height: 100%;
       width: 100%;
       flex: 0 0 50%;
       display: flex;
@@ -20,7 +22,7 @@
    }
 
    &__logo {
-      margin-right: 85px;
+      margin-right: 58px;
       height: 50px;
       & img {
          object-fit: contain;
@@ -46,7 +48,9 @@
    }
 
    &__right {
-      margin-left: 6%;
+      // padding-left: 20px;
+      margin-left: 120px;
+      height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
@@ -235,7 +239,7 @@
    }
 
    &__btn-signin {
-      margin-right: 227px;
+      margin-right: 205px;
       padding: 0 20px 0 26px;
       height: 50px;
       border-radius: 78px;

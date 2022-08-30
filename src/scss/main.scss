@@ -16,6 +16,7 @@
 @import "./parts/connect";
 @import "./parts/signup";
 @import "./parts/statistic";
+
 // * {
 //    border: 1px solid red;
 // }
@@ -51,7 +52,7 @@ main {
    // height: 100%;
 }
 .main {
-   padding: 71px 235px 270px;
+   padding: 75px 235px 270px;
 }
 h2 {
    font-size: 53px;
@@ -60,10 +61,8 @@ h2 {
 .how {
    position: relative;
    width: 1450px;
-   margin: 50px auto;
-   padding: 51px 58px 10px 49px;
-   // display: flex;
-   // justify-content: space-between;
+   margin: 50px auto 40px;
+   padding: 55px 58px 17px 49px;
    font-size: 20px;
    background-color: $color_bg-block;
    border-radius: 78px;
@@ -73,11 +72,10 @@ h2 {
    grid-template-rows: 1fr auto;
    align-items: center;
    justify-items: center;
-   // justify-content: center;
-   // & div[class="how__img"]:nth-child(7) {
-   //    width: 200px;
-   // border: 1px solid red;
-
+   &__title {
+      font-weight: 400;
+      font-size: 60px;
+   }
    &__block {
       position: relative;
       display: flex;
@@ -91,6 +89,9 @@ h2 {
       width: 150px;
       &_width {
          width: 200px;
+         & img {
+            width: 200px;
+         }
       }
       & img {
          object-fit: cover;
@@ -99,6 +100,7 @@ h2 {
    }
 
    &__text {
+      font-size: 20px;
       margin-top: 17px;
       align-self: flex-start;
       padding: 0 5px;
@@ -112,15 +114,15 @@ h2 {
    }
    &__arrow {
       position: absolute;
-      top: 39%;
+      top: 105px;
       &:first-child {
-         left: 25%;
+         left: 350px;
       }
       &:nth-child(2) {
-         left: 47%;
+         left: 670px;
       }
       &:last-child {
-         left: 70%;
+         left: 1040px;
       }
    }
 }

@@ -1,22 +1,23 @@
 .ranked-content {
    color: $color_white;
-   padding-top: 57px;
-   padding-bottom: 300px;
+   padding-top: 34px;
+   padding-bottom: 360px;
    display: flex;
-   // height: 100%;
+   // align-items: flex-start;
    font-size: 15px;
 }
 .best-players {
    font-size: 15px;
    // padding: 15px 26px 0 47px;
-   padding: 19px 15px;
-   margin-left: 57px;
+   padding: 14px 15px;
+   margin-left: 40px;
    width: 350px;
    // width: 100%;
    // height: 503px;
    background: $color_bg-block;
    display: flex;
    flex-direction: column;
+   align-items: center;
    gap: 10px;
    border: 2px solid $color_bg-light;
 
@@ -35,13 +36,14 @@
    }
 
    &__num {
-      margin-right: 5px;
+      margin-right: 20px;
       margin-left: 18px;
    }
 
    &__ava {
       width: 40px;
       height: 40px;
+      flex: 0 0 40px;
       border-radius: 50%;
       background-color: $color_bg-light;
       display: flex;
@@ -49,17 +51,23 @@
       justify-content: center;
    }
    &__name {
-      margin-left: 5px;
+      margin-left: 12px;
       margin-right: auto;
    }
 
    &__rank {
+      margin-left: 15px;
    }
 
    &__img {
+      position: relative;
+      right: 0;
+      top: 12px;
+      // transform: translate(0, -50%);
       height: 100px;
+      width: 100px;
       & img {
-         height: 100%;
+         height: 75%;
          object-fit: cover;
       }
    }
@@ -68,8 +76,8 @@
    // padding-top: 133px;
    position: relative;
    padding: 0 17px 19px;
-   margin-left: 51px;
-   margin-right: 41px;
+   margin-left: 50px;
+   margin-right: 35px;
    width: 1000px;
    // height: 100%;
    background: $color_bg-block;
@@ -82,7 +90,7 @@
       height: 2px;
       background-color: $color_bg-light;
       left: 0;
-      top: 50px;
+      top: 39px;
    }
 
    &__table {
@@ -95,8 +103,8 @@
       // padding: 0;
       width: 100%;
       & th {
-         margin-bottom: 19px;
-         padding-top: 8px;
+         margin-bottom: 13px;
+         padding-top: 2px;
          // display: flex;
          // align-items: center;
          display: flex;
@@ -109,8 +117,8 @@
             & div {
                position: absolute;
                top: 50%;
-               left: -6px;
-               transform: translate(0, -35%);
+               left: -8px;
+               transform: translate(0, -54%);
                width: 100px;
                height: 30px;
                border-radius: 78px;
@@ -119,7 +127,7 @@
                align-items: center;
                justify-content: center;
                color: $color_black;
-               font-size: 15px;
+               font-size: 12px;
             }
          }
       }
@@ -155,6 +163,7 @@
       font-weight: 400;
    }
    &__ava {
+      margin-left: -7px;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -215,16 +224,22 @@
    background-color: $color_bg-block;
 
    &__title {
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-left: 27px;
+      margin-top: 10px;
+      margin-bottom: 13px;
       text-align: center;
    }
    &__item {
       display: flex;
       align-items: center;
+      &:not(:nth-child(2)) {
+         margin-top: -15px;
+         // color: rebeccapurple;
+      }
    }
 
    &__rank {
+      margin-left: 5px;
       margin-right: 5px;
    }
 

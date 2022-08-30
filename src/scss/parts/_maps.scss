@@ -2,7 +2,7 @@
    font-weight: 400;
    font-size: 12px;
    color: $color_white;
-   padding: 51px 260px 300px;
+   padding: 65px 240px 230px;
    &__title {
       padding: 10px 0;
       text-align: center;
@@ -18,12 +18,12 @@
       border: 2px solid #1dc2e6;
       border-radius: 78px;
       & p:not(:last-child) {
-         margin-bottom: 5px;
+         margin-bottom: 8px;
       }
    }
 
    &__col {
-      margin-top: 51px;
+      margin-top: 20px;
       display: flex;
       justify-content: space-between;
    }
@@ -34,6 +34,7 @@
       width: 300px;
       height: fit-content;
       background-color: $color_bg-block;
+      border: 2px solid $color_bg-light;
    }
    &__team-title {
       position: absolute;
@@ -58,6 +59,7 @@
    &__content {
       background-color: $color_bg-block;
       padding: 15px 17px;
+      border: 2px solid $color_bg-light;
    }
 
    &__content-title {
@@ -157,7 +159,7 @@
 }
 
 .map {
-   padding: 166px 300px 300px;
+   padding: 166px 300px 470px;
 
    &__col {
       margin-top: 51px;
