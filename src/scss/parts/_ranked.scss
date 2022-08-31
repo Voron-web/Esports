@@ -67,8 +67,9 @@
       height: 100px;
       width: 100px;
       & img {
-         height: 75%;
-         object-fit: cover;
+         height: 65%;
+         width: 80%;
+         object-fit: contain;
       }
    }
 }
@@ -179,7 +180,7 @@
       // justify-content: center;
       width: 140px;
       & img {
-         width: 100%;
+         width: 75%;
          object-fit: cover;
       }
    }
@@ -262,8 +263,11 @@
       height: 80px;
       width: 100px;
       & img {
-         object-fit: cover;
-         width: 100%;
+         position: relative;
+         top: 30px;
+         left: 10px;
+         object-fit: contain;
+         width: 80%;
       }
    }
 }
