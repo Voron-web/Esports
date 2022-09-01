@@ -1,0 +1,20 @@
+.contact {
+   padding: 107px 0;
+   text-align: center;
+   &__title {
+      font-size: 32px;
+      font-weight: 400;
+   }
+
+   &__info {
+      margin-top: 107px;
+      font-size: 14px;
+      font-family: "Inter";
+      & p {
+         margin-bottom: 30px;
+      }
+      & a {
+         color: $color_bg-light;
+      }
+   }
+}
