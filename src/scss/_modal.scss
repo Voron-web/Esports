@@ -1,0 +1,203 @@
+.modal {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 900px;
+   height: 600px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 30px;
+   border: 3px solid $color_bg-light;
+   background-color: $color_bg-block;
+   z-index: 5;
+
+   &__close-btn {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      z-index: 3;
+      cursor: pointer;
+      & div {
+         position: absolute;
+         width: 100%;
+         height: 6px;
+         border-radius: 2px;
+         background-color: #fff;
+         &:first-child {
+            transform: rotate(45deg);
+         }
+         &:last-child {
+            transform: rotate(-45deg);
+         }
+      }
+   }
+   &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      font-weight: 500;
+      font-size: 30px;
+      color: $color_black;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      background-color: $color_bg-light;
+      cursor: pointer;
+   }
+   &_sale {
+      display: block;
+      &.hidden {
+         display: none;
+      }
+   }
+}
+.sale {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__trangle-out {
+      position: relative;
+      margin-top: 65px;
+      border: 180px solid transparent;
+      border-top: 315px solid $color_bg-light;
+      display: block;
+      width: 0;
+      height: 0;
+      &::after {
+         content: "";
+         position: absolute;
+         top: -313px;
+         left: -176px;
+
+         border: 176px solid transparent;
+         border-top: 308px solid $color_bg-block;
+         display: block;
+         width: 0;
+         height: 0;
+      }
+   }
+
+   &__trangle-in {
+      position: absolute;
+      top: -292px;
+      left: -138px;
+
+      // margin-top: 65px;
+      border: 139px solid transparent;
+      border-top: 242px solid $color_bg-light;
+      display: block;
+      width: 0;
+      height: 0;
+      z-index: 2;
+      & img {
+         position: absolute;
+         width: 38px;
+         height: 152px;
+         top: -220px;
+         left: -20px;
+      }
+   }
+   & span {
+      position: relative;
+      top: -145px;
+      font-weight: 500;
+      font-size: 30px;
+   }
+   &__btn-block {
+      position: relative;
+      top: -96px;
+      display: flex;
+      align-items: center;
+      gap: 120px;
+   }
+
+   &__btn {
+      width: 200px;
+   }
+}
+
+.out {
+   width: 100%;
+   height: 100%;
+
+   & input {
+      color: #fff;
+      // margin: 0 auto;
+      font-size: 30px;
+      font-weight: 500;
+      width: 485px;
+      height: 85px;
+      background-color: $color_bg-block-dark;
+      border-radius: 30px;
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 63px;
+   }
+
+   &__cheat-name {
+      // margin-top: 20px;
+      width: fit-content;
+      position: relative;
+      margin: 20px auto 0;
+      & img {
+         position: absolute;
+         top: 42%;
+         right: 9px;
+         transform: translate(0, -50%);
+      }
+      & input {
+         padding-left: 30px;
+      }
+      & p {
+         text-align: center;
+         position: absolute;
+         width: 480px;
+         bottom: -50px;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: #ff0000;
+         font-size: 20px;
+         font-weight: 500;
+      }
+   }
+
+   &__account {
+      width: fit-content;
+      margin: 68px auto 0;
+      position: relative;
+      & p {
+         text-align: center;
+         position: absolute;
+         width: 480px;
+         bottom: -120px;
+         left: 50%;
+         transform: translate(-50%, 0);
+         color: #ff0000;
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 23px;
+      }
+      & span {
+         color: #9e9e9e;
+      }
+      & img {
+         position: absolute;
+         top: 42%;
+         right: 9px;
+         transform: translate(0, -50%);
+      }
+      & input {
+         text-align: center;
+      }
+   }
+
+   &__btn {
+      margin: 147px auto 0;
+      width: 265px;
+   }
+}
