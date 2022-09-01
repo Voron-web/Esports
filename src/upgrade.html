@@ -1,0 +1,37 @@
+@include('./html/_head.html',{
+'title':'Upgrade'
+})
+
+<body>
+   <div class="wrapper">
+      @include('./html/_header.html',{
+      'cases':'',
+      'news':'',
+      'rate':'',
+      'games':''
+      })
+      <main>
+         <div class="upgrade">
+            <div class="container">
+               <div class="upgrade__banner">
+                  <img src="./img/upgrade/banner.png" alt="">
+               </div>
+               <h1 class="upgrade__title">СКОРО</h1>
+               <p class="upgrade__subtitle">Следите за разработкой ! <br>
+                  Апгрейды будут доступны в течение месяца</p>
+               <p class="upgrade__link"><a href="#">ПОДПИСАТЬСЯ</a></p>
+            </div>
+         </div>
+      </main>
+
+      @include('./html/_footer.html',{
+      'img':'footer_logo-eagle_s.png',
+      'class':'w500',
+      'link':'../index.html#subscription'
+      })
+
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

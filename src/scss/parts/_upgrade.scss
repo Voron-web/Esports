@@ -1,0 +1,37 @@
+.upgrade {
+   margin-bottom: 224px;
+   text-align: center;
+   color: #f2e400;
+   font-weight: 900;
+   &__banner {
+      margin: 0 86px;
+      & img {
+         width: 100%;
+         object-fit: contain;
+      }
+   }
+
+   &__subtitle {
+      margin-top: 15px;
+      font-size: 24px;
+      font-style: italic;
+   }
+
+   &__title {
+      margin-top: 25px;
+      font-size: 96px;
+   }
+   &__link {
+      margin-top: 27px;
+      display: inline-block;
+      background-color: #f2e400;
+      padding: 12px 8px;
+      & a {
+         padding: 12px 8px;
+         // background-color: #f2e400;
+         font-size: 28px;
+         font-style: italic;
+         color: $color_black;
+      }
+   }
+}

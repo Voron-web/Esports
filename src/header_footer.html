@@ -1,16 +1,31 @@
-<!--  -->
 @include('./html/_head.html',{
-'title':'Главная'
+'title':'title'
 })
 
 <body>
    <div class="wrapper">
-      @include('./html/_header_login.html')
+      @include('./html/_header.html',{
+      'cases':'',
+      'news':'',
+      'rate':'',
+      'games':''
+      })
       <main>
       </main>
+
+      <!-- @include('./html/_footer.html',{
+      'img':'footer_logo-eagle_g.png',
+      'class':'w500',
+      'link':'../index.html#subscription'
+      }) -->
+
+
       @include('./html/_footer.html',{
-      'img':'footer_logo-newer.png'
+      'img':'footer_logo-newer.png',
+      'class':'',
+      'link':'../cases.html'
       })
+
    </div>
    <script src="./js/script.js"></script>
 </body>
