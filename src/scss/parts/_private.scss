@@ -1,0 +1,29 @@
+.private {
+   margin: 65px 77px 300px;
+   &__title {
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+   }
+
+   &__text {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      margin-top: 85px;
+      & p {
+         font-weight: 400;
+      }
+      & ul {
+         text-indent: 20px;
+         // color: red;
+         font-weight: 400;
+         & > ul {
+            text-indent: 40px;
+         }
+      }
+      & span {
+         color: $color_bg-light;
+      }
+   }
+}
