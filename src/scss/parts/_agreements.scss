@@ -9,6 +9,25 @@
 
    &__text {
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 600;
+      line-height: 16px;
+      margin-top: 85px;
+      &_title {
+         font-weight: 600;
+      }
+      & p {
+         font-weight: 400;
+      }
+      & ul {
+         text-indent: 20px;
+         // color: red;
+         font-weight: 400;
+         & > ul {
+            text-indent: 40px;
+         }
+      }
+      & span {
+         color: $color_bg-light;
+      }
    }
 }
