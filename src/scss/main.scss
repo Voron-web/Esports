@@ -33,7 +33,7 @@ a {
    font-size: inherit;
 }
 body {
-   // width: 100%;
+   width: 100%;
    font-family: "Roboto", sans-serif;
    background: #0c1226;
    color: $color_white;
@@ -207,3 +207,4 @@ h2 {
       }
    }
 }
+@import "./media";

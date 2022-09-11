@@ -72,19 +72,34 @@
       width: 100%;
       padding: 44px 0 36px 68px;
       display: grid;
-      grid-template-columns: 370px 370px;
-      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1fr 45%;
+      grid-template-rows: 65px 65px;
+      grid-template-areas:
+         "games contract avatar"
+         "gamers cases avatar";
       align-items: center;
       justify-items: flex-start;
       background-color: $color_bg-block;
       border-radius: 78px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       row-gap: 40px;
-      column-gap: 77px;
+      column-gap: 20px;
    }
 
    &__statistic-block {
       display: flex;
+      &_games {
+         grid-area: games;
+      }
+      &_contract {
+         grid-area: contract;
+      }
+      &_gamers {
+         grid-area: gamers;
+      }
+      &_cases {
+         grid-area: cases;
+      }
    }
 
    &__statistic-img {
@@ -115,20 +130,25 @@
    }
 
    &__avatar {
-      position: absolute;
-      width: 700px;
-      // bottom: -9px;
-      bottom: -100px;
+      position: relative;
+      grid-area: avatar;
+      align-self: flex-end;
+      // width: 100%;
+      // bottom: 50px;
+      // bottom: -100px;
       // right: 116px;
-      right: 0;
+      // top: -50%;
+      // bottom: -50px;
+      right: 50px;
 
       & img {
-         object-fit: contain;
+         object-fit: cover;
          width: 100%;
       }
       &.w500 {
-         width: 500px;
-         bottom: 0;
+         // padding-bottom: 20px;
+         // width: 500px;
+         bottom: -20px;
          right: 30px;
       }
    }

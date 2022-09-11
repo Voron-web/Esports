@@ -19,7 +19,8 @@
    }
 
    &__advantages {
-      margin: 150px 250px 245px;
+      width: 100%;
+      margin: 150px auto 245px;
       display: flex;
       justify-content: space-between;
       gap: 30px;
@@ -49,6 +50,7 @@
       margin: 104px auto 0;
       width: 1500px;
       height: 592px;
+      max-width: 100%;
       background-color: $color_bg-block;
       border-radius: 78px;
       display: grid;
@@ -127,7 +129,7 @@
    position: relative;
    padding: 62px 17px 31px 7px;
    background-color: $color_bg-block;
-   flex: 0 0 518px;
+   flex: 0 1 518px;
    height: 760px;
    border-radius: 35px;
    font-weight: 500;
@@ -164,6 +166,7 @@
    &__front {
       display: flex;
       flex-direction: column;
+      // flex: 0 0 100%;
       padding: 62px 17px 31px 7px;
       transform: rotateX(0deg);
    }

@@ -1,0 +1,201 @@
+@media (max-width: 1600px) {
+   .header {
+      &__left {
+         flex: 0 0 25%;
+      }
+      &__menu {
+         font-size: 15px;
+         & li {
+            margin-right: 10px;
+            white-space: nowrap;
+         }
+      }
+      &__logo {
+         margin-right: 25px;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 1450px) {
+   .header {
+      &__right {
+         justify-content: space-between;
+      }
+
+      &__search {
+         margin-right: 20px;
+      }
+      &__group {
+         margin-right: 20px;
+      }
+      &__info {
+         gap: 10px;
+      }
+   }
+
+   .footer {
+      &__statistic-score {
+         font-size: 20px;
+      }
+      &__statistic-title {
+         font-size: 15px;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 1300px) {
+   .header {
+      &__info {
+         display: none;
+      }
+      &__right {
+         justify-content: flex-end;
+      }
+   }
+
+   .footer {
+      &__statistic {
+         padding: 20px 0 16px 50px;
+         grid-template-columns: 1fr 45%;
+         column-gap: 10px;
+         row-gap: 10px;
+         grid-template-areas:
+            "games  avatar"
+            "contract avatar"
+            "gamers avatar"
+            "cases avatar";
+      }
+      &__statistic-img {
+         width: 40px;
+      }
+      &__avatar {
+         align-self: center;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 1050px) {
+   .header {
+      &__menu {
+         display: none;
+      }
+      &__search {
+         display: none;
+      }
+      &__group {
+         display: none;
+      }
+      &__ring {
+         display: none;
+      }
+      &__wallet {
+         display: none;
+      }
+      &__user {
+         display: none;
+      }
+   }
+
+   .footer {
+      &__content {
+         flex-direction: column;
+         align-items: center;
+      }
+      &__logo {
+         margin-bottom: 20px;
+      }
+      &__nav {
+         margin-right: 0;
+
+         margin-bottom: 40px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+      }
+      &__title {
+         text-align: center;
+      }
+      &__subtitle {
+         text-align: center;
+      }
+
+      & ul {
+         display: flex;
+         justify-content: center;
+      }
+      & li {
+         width: auto;
+         margin-right: 20px;
+      }
+      &__partner {
+         margin-top: 30px;
+         // display: block;
+         text-align: center;
+      }
+      &__social {
+         display: flex;
+         justify-content: center;
+         margin-left: 0;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 768px) {
+   .footer {
+      &__content {
+         padding: 0 20px 49px 20px;
+      }
+
+      &__statistic {
+         margin-top: 50px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+         row-gap: 10px;
+         grid-template-areas:
+            // "games  avatar"
+            // "contract avatar"
+            // "gamers avatar"
+            // "cases avatar";
+
+            "avatar "
+            "games  "
+            "contract"
+            "gamers  "
+            "cases";
+      }
+      &__avatar {
+         width: 200px;
+         top: -50px;
+         left: 0px;
+         align-self: center;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 420px) {
+   .footer {
+      &__nav {
+         & ul {
+            flex-direction: column;
+         }
+      }
+   }
+}
+@media (max-width: 350px) {
+   .footer {
+      &__avatar {
+         left: -20px;
+      }
+   }
+}
