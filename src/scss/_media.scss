@@ -1,3 +1,28 @@
+@media (max-width: 1800px) {
+   .items {
+      &__blocks {
+         flex-direction: column;
+      }
+      &__bests {
+         margin-top: 20px;
+      }
+      &__table {
+         justify-content: space-between;
+         grid-template-columns: repeat(auto-fill, 260px);
+         grid-auto-columns: repeat(auto-fill, 260px);
+      }
+   }
+   .maps {
+      padding: 65px 100px 100px;
+   }
+   .myfriends-list {
+      &__block {
+         justify-content: space-around;
+         // justify-items: space-around;
+      }
+   }
+}
+
 @media (max-width: 1600px) {
    .header {
       &__left {
@@ -43,6 +68,19 @@
          font-size: 15px;
       }
    }
+
+   .maps {
+      padding: 65px 0px 100px;
+   }
+   .myfriends {
+      padding: 65px 50px 200px;
+      & input {
+         width: 300px;
+      }
+      & form {
+         margin-left: 50px;
+      }
+   }
 }
 
 ////////////////////////////////////
@@ -74,6 +112,70 @@
       }
       &__avatar {
          align-self: center;
+      }
+   }
+
+   .maps {
+      &__col {
+         gap: 10px;
+      }
+      &__team {
+         width: auto;
+      }
+      &__team-item {
+         padding: 0 10px;
+         width: fit-content;
+      }
+   }
+   .team {
+      &__name {
+         margin: 0;
+      }
+      &__item {
+         &_left {
+            justify-content: center;
+         }
+         &_right {
+            justify-content: center;
+         }
+      }
+
+      &__logo {
+         display: none;
+      }
+      &__ava {
+         margin: 0 10px;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 1150px) {
+   .myfriends {
+      padding: 65px 0 100px;
+   }
+
+   .myfriends-list {
+      &__item {
+         width: 350px;
+         height: 70px;
+      }
+      &__ava {
+         width: 50px;
+         height: 50px;
+      }
+      &__name {
+         font-size: 22px;
+         // margin-right: 10px;
+      }
+      &__rank {
+         width: 150px;
+      }
+      &__block {
+         grid-template-columns: repeat(auto-fill, 360px);
+
+         // justify-items: center;
       }
    }
 }
@@ -145,6 +247,36 @@
          margin-left: 0;
       }
    }
+
+   .connect {
+      padding: 27px 20px 0;
+      margin-bottom: 100px;
+      width: 90%;
+      &__info {
+         grid-template-columns: repeat(2, auto);
+         grid-template-rows: repeat(4, auto);
+         justify-content: space-around;
+      }
+      &__players-title,
+      &__map-title {
+         margin-top: 30px;
+      }
+   }
+   .items {
+      padding-right: 50px;
+      &__bests {
+         flex-direction: column;
+      }
+      &__title-btn {
+         margin-left: 10px;
+      }
+   }
+
+   .maps {
+      &__grid {
+         grid-template-columns: 1fr;
+      }
+   }
 }
 
 ////////////////////////////////////
@@ -161,11 +293,6 @@
          grid-template-rows: 100px 1fr 1fr 1fr 1fr;
          row-gap: 10px;
          grid-template-areas:
-            // "games  avatar"
-            // "contract avatar"
-            // "gamers avatar"
-            // "cases avatar";
-
             "avatar "
             "games  "
             "contract"
@@ -177,6 +304,211 @@
          top: -50px;
          left: 0px;
          align-self: center;
+      }
+   }
+
+   .connect {
+      &__item {
+         flex-direction: column;
+      }
+      &__logo-block {
+         margin-bottom: 20px;
+      }
+      &__info {
+         font-size: 16px;
+      }
+
+      &__img {
+         width: 200px;
+         margin-left: 10px;
+
+         & img {
+            width: 100%;
+         }
+      }
+   }
+   .agreement {
+      padding: 50px 20px 100px 20px;
+   }
+   .contact {
+      padding: 50px 0;
+      &__info {
+         margin-top: 50px;
+      }
+   }
+
+   .items {
+      padding: 91px 20px 400px 20px;
+
+      &__player {
+         padding: 20px 35px;
+
+         width: 100%;
+         height: auto;
+      }
+      &__ava {
+         flex: 0 0 100px;
+         height: 100px;
+         align-self: center;
+      }
+      &__name {
+         font-size: 25px;
+      }
+      &__rank {
+         display: none;
+      }
+      &__eagle {
+         position: relative;
+         // align-self: center;
+         left: 0;
+         top: 0;
+      }
+
+      &__player-money {
+         flex-direction: column;
+         align-items: flex-start;
+         & span {
+            margin-left: 50px;
+         }
+      }
+      &__pay {
+         margin: 15px 0 0 0;
+      }
+      &__title-block {
+         height: auto;
+
+         padding: 10px;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__title-name {
+         margin-left: 0;
+      }
+
+      &__title-btn {
+         margin: 10px 0 0 30px;
+      }
+      &__table {
+         justify-content: center;
+      }
+   }
+
+   .maps {
+      &__col {
+         flex-direction: column;
+      }
+      &__content {
+         margin-top: 20px;
+         order: 2;
+      }
+      &__team-item {
+         margin: 0 10px;
+         padding: 0 10px;
+         width: 250px;
+      }
+      &__team {
+         margin-top: 20px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__grid {
+         justify-items: center;
+      }
+   }
+   .team {
+      &__item {
+         &_left {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            // justify-content: stretch;
+         }
+         &_right {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+         }
+      }
+      &__logo {
+         display: block;
+      }
+   }
+   .myfriends {
+      &__search {
+         height: auto;
+         padding: 10px;
+         flex-direction: column;
+         align-items: flex-start;
+         & input {
+            width: 100%;
+         }
+         & form {
+            margin-top: 10px;
+            margin-left: 0px;
+            width: 100%;
+            // width: fit-content;
+            // flex: 0 1 900px;
+            // width: 100%;
+         }
+      }
+      &__btn {
+         align-self: center;
+         margin-top: 20px;
+      }
+      &__search-title {
+         width: 100%;
+         flex-direction: column;
+         align-items: flex-start;
+         // justify-content: stretch;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 600px) {
+   .items {
+      padding: 91px 0 0px 0px;
+
+      &__ava {
+         flex: 0 0 80px;
+         height: 80px;
+      }
+      &__text {
+         margin-left: 10px;
+      }
+
+      &__title-block {
+         align-items: center;
+      }
+      &__title-btn {
+         margin-left: 0;
+      }
+      &__table {
+         margin-bottom: 100px;
+      }
+   }
+   .best-block {
+      width: 100%;
+      &__img {
+         // position: relative;
+         // top: -40px;
+         // right: 50px;
+         width: 200px;
+         height: 200px;
+         & img {
+            width: 100%;
+         }
+      }
+
+      &__img-drop {
+         // width: 200px;
+         width: 100%;
+         height: 200px;
+         flex: 0 0 200px;
+         right: 10px;
       }
    }
 }
@@ -191,11 +523,88 @@
          }
       }
    }
+   .items {
+      &__player {
+         padding: 10px 10px;
+      }
+      &__eagle {
+         display: none;
+      }
+      &__player-money {
+         & span {
+            font-size: 16px;
+            margin-left: 10px;
+         }
+      }
+      &__pay {
+         width: 150px;
+         & a {
+            font-size: 16px;
+         }
+      }
+      &__title-name {
+         width: 250px;
+         font-size: 30px;
+      }
+      &__title-btn {
+         width: 250px;
+      }
+
+      .best-block {
+         height: 180px;
+         &__img-drop {
+            // width: 100%;
+            height: 150px;
+            flex: 0 0 150px;
+            // right: 10px;
+         }
+      }
+   }
+   .maps {
+      &__title {
+         padding: 25px 0;
+
+         width: 100%;
+         & p:last-child {
+            display: flex;
+            flex-direction: column;
+            & span {
+               margin-bottom: 5px;
+            }
+         }
+      }
+   }
+   .myfriends-list {
+      &__ava {
+         width: 50px;
+         height: 50px;
+      }
+   }
 }
 @media (max-width: 350px) {
    .footer {
       &__avatar {
          left: -20px;
+      }
+   }
+   .connect {
+      &__img {
+         width: 170px;
+         margin-left: 5px;
+      }
+   }
+   .agreement {
+      padding: 30px 5px 60px 5px;
+      &__title {
+         font-size: 28px;
+      }
+      &__text {
+         margin-top: 30px;
+      }
+   }
+   .maps {
+      &__grid-item {
+         width: 250px;
       }
    }
 }

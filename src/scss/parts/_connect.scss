@@ -22,7 +22,10 @@
       background-color: $color_bg-block-dark;
       border-radius: 30px;
    }
-
+   &__logo-block {
+      display: flex;
+      align-items: center;
+   }
    &__img {
       margin-left: 16px;
       margin-right: 20px;
@@ -51,7 +54,6 @@
       display: grid;
       justify-content: space-between;
       justify-items: center;
-
       grid-template-columns: repeat(4, auto);
       grid-template-rows: repeat(2, auto);
       grid-auto-flow: column;
@@ -78,6 +80,8 @@
    &__host-value {
    }
 
-   &__players {
+   &__players-title {
+   }
+   &__players-value {
    }
 }
