@@ -10,7 +10,6 @@
    border: 3px solid $color_bg-light;
    background-color: $color_bg-block;
    z-index: 5;
-
    &__close-btn {
       position: absolute;
       top: 40px;
@@ -70,7 +69,6 @@
          position: absolute;
          top: -313px;
          left: -176px;
-
          border: 176px solid transparent;
          border-top: 308px solid $color_bg-block;
          display: block;
@@ -78,13 +76,10 @@
          height: 0;
       }
    }
-
    &__trangle-in {
       position: absolute;
       top: -292px;
       left: -138px;
-
-      // margin-top: 65px;
       border: 139px solid transparent;
       border-top: 242px solid $color_bg-light;
       display: block;
@@ -104,6 +99,7 @@
       top: -145px;
       font-weight: 500;
       font-size: 30px;
+      text-align: center;
    }
    &__btn-block {
       position: relative;
@@ -121,10 +117,8 @@
 .out {
    width: 100%;
    height: 100%;
-
    & input {
       color: #fff;
-      // margin: 0 auto;
       font-size: 30px;
       font-weight: 500;
       width: 485px;
@@ -138,9 +132,7 @@
       text-align: center;
       margin-top: 63px;
    }
-
    &__cheat-name {
-      // margin-top: 20px;
       width: fit-content;
       position: relative;
       margin: 20px auto 0;
@@ -195,7 +187,6 @@
          text-align: center;
       }
    }
-
    &__btn {
       margin: 147px auto 0;
       width: 265px;

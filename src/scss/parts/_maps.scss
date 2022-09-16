@@ -170,7 +170,11 @@
 }
 
 .map {
-   padding: 166px 300px 470px;
+   // display: flex;
+   // flex-direction: column;
+   // // justify-content: center;
+   // align-items: center;
+   padding: 166px 0 470px;
 
    &__col {
       margin-top: 51px;

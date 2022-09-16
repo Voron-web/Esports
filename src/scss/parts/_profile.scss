@@ -1,6 +1,6 @@
 .profile {
    position: relative;
-   padding: 64px 0 250px 390px;
+   padding: 64px 390px 250px 390px;
    display: flex;
    font-size: 18px;
 
@@ -13,7 +13,7 @@
    &__banner-right {
       width: 200px;
       position: absolute;
-      right: 204px;
+      right: 10%;
       top: 720px;
    }
    &__content {
@@ -315,6 +315,7 @@
       margin-top: 14px;
       margin-bottom: 28px;
       display: flex;
+      align-items: center;
       justify-content: flex-start;
       & form {
          padding-left: 14px;

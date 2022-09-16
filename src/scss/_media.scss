@@ -23,6 +23,30 @@
    }
 }
 
+@media (max-width: 1700px) {
+   .how {
+      &__arrow {
+         &:nth-child(2) {
+            left: 42%;
+         }
+         &:last-child {
+            left: 68%;
+         }
+      }
+   }
+   .signup {
+      &__advantages {
+         gap: 150px;
+      }
+   }
+   .profile {
+      padding-right: 10px;
+      &__banner-right {
+         display: none;
+      }
+   }
+}
+
 @media (max-width: 1600px) {
    .header {
       &__left {
@@ -38,6 +62,29 @@
       &__logo {
          margin-right: 25px;
       }
+   }
+   .progress {
+      margin: 0 10px 350px;
+   }
+
+   .ranked {
+      &__friends {
+         padding-right: 10px;
+      }
+   }
+   .statistic {
+      &__table {
+         width: 100%;
+         margin-bottom: 100px;
+      }
+
+      &__header {
+         width: 100%;
+      }
+   }
+
+   .statistic-table {
+      width: 100%;
    }
 }
 
@@ -79,6 +126,14 @@
       }
       & form {
          margin-left: 50px;
+      }
+   }
+   .main {
+      padding: 75px 100px 270px;
+   }
+   .ranked {
+      &__friends {
+         display: none;
       }
    }
 }
@@ -127,6 +182,13 @@
          width: fit-content;
       }
    }
+   .map {
+      &__team {
+         width: 378px;
+         flex: 0 0 378px;
+         padding: 23px 15px;
+      }
+   }
    .team {
       &__name {
          margin: 0;
@@ -143,13 +205,44 @@
       &__logo {
          display: none;
       }
+      &__logo_single {
+         display: block;
+      }
       &__ava {
          margin: 0 10px;
       }
    }
+   .signin {
+      &__bunner {
+         padding: 0;
+      }
+   }
+   .signup {
+      &__cases {
+         height: auto;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 1fr);
+      }
+      &__cases-subtitle {
+         padding-bottom: 150px;
+         margin-left: 0px;
+      }
+      &__advantages {
+         gap: 50px;
+      }
+   }
+   .profile {
+      padding-left: 20%;
+      &__banner-left {
+         width: 10%;
+      }
+   }
+   .statistic-table {
+      & td {
+         font-size: 20px;
+      }
+   }
 }
-
-////////////////////////////////////
 
 @media (max-width: 1150px) {
    .myfriends {
@@ -178,6 +271,32 @@
          // justify-items: center;
       }
    }
+   .main {
+      padding: 75px 0 100px;
+   }
+   .ranked-content {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 100px;
+   }
+   .ranked {
+      margin: 0;
+      width: 100%;
+   }
+   .best-players {
+      width: 400px;
+
+      margin-top: 20px;
+      margin-left: 0px;
+      &__item {
+         width: 100%;
+      }
+   }
+   .statistic {
+      &__table {
+         padding: 38px 10px 100px;
+      }
+   }
 }
 
 ////////////////////////////////////
@@ -200,6 +319,12 @@
          display: none;
       }
       &__user {
+         display: none;
+      }
+      &__btn-signup {
+         display: none;
+      }
+      &__btn-signin {
          display: none;
       }
    }
@@ -277,6 +402,159 @@
          grid-template-columns: 1fr;
       }
    }
+   .recommend {
+      margin-left: 0px;
+   }
+   .news {
+      &__content {
+         margin-left: 20px;
+      }
+   }
+   .signup {
+      &_title {
+         margin-top: 50px;
+         font-size: 45px;
+      }
+      &__subtitle {
+         font-size: 20px;
+      }
+   }
+   .map {
+      padding: 50px 0 100px;
+   }
+   .modal {
+      width: 700px;
+      // height: 500px;
+   }
+   .profile {
+      padding-bottom: 100px;
+      padding-left: 10px;
+      &__name {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__btn-block {
+         margin-top: 10px;
+         align-self: flex-end;
+      }
+      &__header {
+         align-items: flex-end;
+      }
+      &__aside-menu {
+         margin-top: 12px;
+      }
+      &__banner-left {
+         display: none;
+      }
+   }
+   .progress {
+      &__block {
+         font-size: 20px;
+      }
+   }
+   .statistic {
+      &__header {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__btn-block {
+         margin-top: 30px;
+      }
+   }
+   .statistic-table {
+      margin-bottom: 100px;
+      & td {
+         font-size: 18px;
+      }
+      & th {
+         height: 50px;
+         &:last-child {
+            & img {
+               height: auto;
+               width: 55px;
+            }
+         }
+         & img {
+            height: 40px;
+         }
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 850px) {
+   .card {
+      &:hover {
+         transform: translate(0, 0);
+      }
+   }
+
+   .signin {
+      &__modes {
+         flex-direction: column;
+         gap: 40px;
+      }
+   }
+   .signup {
+      &__cases-item {
+         // margin: -40px auto;
+         margin-top: 10px;
+         width: 280px;
+         height: 280px;
+      }
+      &__cases-title {
+         margin-top: 100px;
+      }
+   }
+   .map {
+      &__col {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+   .team {
+      &__item_left {
+         flex-direction: row-reverse;
+      }
+   }
+   .statistic-table {
+      & td {
+         margin-top: 20px;
+
+         height: 70px;
+      }
+
+      &__img {
+         width: 150px;
+         height: 40px;
+         & div {
+            width: 30px;
+            height: 30px;
+         }
+      }
+   }
+   .statistic {
+      &__title {
+         font-size: 14px;
+      }
+      &__val {
+         font-size: 20px;
+      }
+      &__logo {
+         width: 40px;
+         height: 40px;
+      }
+
+      &__item {
+         &:nth-child(4) {
+            &::before {
+               width: 150px;
+               height: 150px;
+            }
+         }
+      }
+   }
 }
 
 ////////////////////////////////////
@@ -330,6 +608,11 @@
    .agreement {
       padding: 50px 20px 100px 20px;
    }
+   .private {
+      margin: 0;
+      padding: 50px 20px 100px 20px;
+   }
+
    .contact {
       padding: 50px 0;
       &__info {
@@ -406,6 +689,10 @@
          padding: 0 10px;
          width: 250px;
       }
+      &__team-item_single {
+         width: 320px;
+      }
+
       &__team {
          margin-top: 20px;
          display: flex;
@@ -464,6 +751,128 @@
          // justify-content: stretch;
       }
    }
+   .recommend {
+      display: none;
+   }
+   .how {
+      &__title {
+         font-size: 40px;
+      }
+      &__arrow {
+         display: none;
+      }
+      &__text {
+         font-size: 16px;
+      }
+   }
+   .question {
+      font-size: 25px;
+      &__answer {
+         font-size: 16px;
+      }
+   }
+   .signup {
+      &__subtitle {
+         width: auto;
+      }
+      &__advantages {
+         margin-top: 100px;
+         margin-bottom: 150px;
+      }
+   }
+   .advantages {
+      &__item {
+         gap: 25px;
+      }
+      &__title {
+         font-size: 22px;
+      }
+   }
+   .modal {
+      width: 100%;
+   }
+   .friends {
+      &__img {
+         &_profile {
+            display: none;
+         }
+      }
+   }
+   .profile {
+      padding-top: 20px;
+      &__content {
+         width: 100%;
+      }
+      &__aside {
+         width: 100%;
+         // padding: 0 10px;
+         margin: 0;
+         margin-bottom: 90px;
+         & li:not(:first-child) {
+            margin: 0;
+         }
+      }
+      &__aside-menu {
+         padding: 10px;
+         // margin-bottom: 20px;
+         & ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+         // & li {
+         //    margin: 0;
+         // }
+      }
+
+      flex-direction: column-reverse;
+      &__friends {
+         display: none;
+      }
+      &__rank {
+         display: none;
+      }
+   }
+   .progress {
+      &__block {
+         flex-direction: column;
+         margin-bottom: 50px;
+      }
+      &__date {
+         align-self: flex-start;
+      }
+   }
+   .ranked {
+      &__btn {
+         display: none !important;
+      }
+      &__ava {
+         display: none;
+      }
+   }
+   .statistic {
+      &__eagle {
+         display: none;
+      }
+   }
+   .statistic-table {
+      padding: 5px;
+
+      &__table {
+         grid-template-columns: repeat(7, auto);
+      }
+      & td {
+         font-size: 16px;
+      }
+      & th:nth-child(3),
+      & td:nth-child(3),
+      & th:nth-child(4),
+      & td:nth-child(4),
+      & th:nth-child(6),
+      & td:nth-child(6) {
+         display: none;
+      }
+   }
 }
 
 ////////////////////////////////////
@@ -509,6 +918,438 @@
          height: 200px;
          flex: 0 0 200px;
          right: 10px;
+      }
+   }
+   .write {
+      &__form {
+         flex-direction: column;
+         align-items: flex-start;
+         & form {
+            & img {
+               top: 10px;
+            }
+         }
+      }
+      &__ava {
+         margin-bottom: 10px;
+      }
+      &__btn-block {
+         // padding: 15px 0;
+
+         flex-direction: column;
+         align-items: flex-start;
+         & button {
+            width: 200px;
+         }
+
+         & form {
+            align-self: center;
+         }
+      }
+      &__tools {
+         margin-left: 0;
+         margin-bottom: 20px;
+      }
+   }
+   .post {
+      &__content {
+         font-size: 30px;
+         text-align: center;
+      }
+      &__bg {
+         font-size: 80px;
+      }
+      &__statistic {
+         font-size: 20px;
+         & div {
+            margin-right: 15px;
+
+            & img {
+               width: 25px;
+               height: 25px;
+               margin-right: 5px;
+            }
+         }
+      }
+   }
+   .how {
+      padding: 10px 20px 30px;
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto 1fr auto;
+      // row-gap: 20px;
+      &__img {
+         margin-top: 20px;
+         &_width {
+            margin-top: 20px;
+         }
+      }
+   }
+   .question {
+      font-size: 20px;
+      &__answer {
+         font-size: 14px;
+      }
+   }
+   .signup {
+      &__cards-title {
+         font-size: 30px;
+      }
+      &__cases {
+         height: auto;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+      }
+      &__cases-subtitle {
+         font-size: 22px;
+      }
+   }
+
+   .signin {
+      &__bunner {
+         margin-bottom: 60px;
+      }
+      &__modes {
+         padding: 0;
+      }
+      &__modes-title {
+         margin-top: 100px;
+      }
+   }
+   .card {
+      flex: 0 0 300px;
+      // height: auto;
+      &__list {
+         font-size: 16px;
+         font-weight: 400;
+      }
+      &__question {
+         display: none;
+      }
+      &__back {
+         padding: 62px 15px 31px 23px;
+
+         font-size: 16px;
+         font-weight: 500;
+      }
+   }
+   .map {
+      &__title {
+         width: 400px;
+         padding: 16px 0 35px;
+      }
+   }
+   .sale {
+      &__trangle-out {
+         border: 100px solid transparent;
+         border-top: 160px solid $color_bg-light;
+         &::after {
+            content: "";
+            position: absolute;
+            top: -157px;
+            left: -95px;
+            border: 95px solid transparent;
+            border-top: 150px solid $color_bg-block;
+            display: block;
+            width: 0;
+            height: 0;
+         }
+      }
+      & span {
+         top: -80px;
+      }
+
+      &__trangle-in {
+         position: absolute;
+         top: -140px;
+         left: -60px;
+         // margin-top: 65px;
+         border: 60px solid transparent;
+         border-top: 100px solid $color_bg-light;
+         display: block;
+         width: 0;
+         height: 0;
+         z-index: 2;
+         & img {
+            position: absolute;
+            width: 15px;
+            height: 50px;
+            top: -85px;
+            left: -7px;
+         }
+      }
+      &__btn-block {
+         padding: 0 10px;
+         width: 100%;
+         top: -26px;
+         justify-content: space-between;
+         gap: 10px;
+      }
+   }
+   .ranked {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      &::after {
+         // height: 2px;
+         top: 80px;
+      }
+
+      &__table {
+         width: 100%;
+      }
+      &__img {
+         display: none;
+      }
+      &__title {
+         & th {
+            height: auto;
+            writing-mode: vertical-lr;
+
+            // text-orientation: upright;
+            // transform: rotate(90deg);
+         }
+         & th:last-child {
+            // display: none;
+            visibility: hidden;
+         }
+      }
+      & td:last-child {
+         width: 20px;
+      }
+   }
+   .statistic {
+      &__table {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(5, 1fr);
+         // justify-items: space-around;
+         // justify-content: space-between;
+         // justify-self: center;
+      }
+      &__item {
+         justify-self: center !important;
+         flex-direction: row !important;
+         margin: 0 !important;
+         justify-content: flex-start;
+         &:nth-child(4) {
+            &::before {
+               display: none;
+            }
+         }
+      }
+      &__info {
+         text-align: start !important;
+      }
+   }
+}
+
+////////////////////////////////////
+
+@media (max-width: 520px) {
+   .out {
+      & input {
+         width: 100%;
+         height: 50px;
+
+         font-size: 20px;
+      }
+      & p {
+         font-size: 16px;
+         width: 100%;
+      }
+      padding: 10px;
+      &__title {
+         font-size: 25px !important;
+      }
+      &__cheat-name {
+         width: 100%;
+
+         // & input {
+         //    // width: 100%;
+         // }
+      }
+      &__account {
+         width: 100%;
+      }
+   }
+   .profile {
+      &__aside {
+         margin-bottom: 20px;
+         & li {
+            margin: 20px 10px;
+         }
+         & li:not(:first-child) {
+            margin: 20px 10px;
+         }
+      }
+      &__aside-menu {
+         // font-size: 178px;
+         & ul {
+            flex-wrap: wrap;
+         }
+      }
+
+      &__header {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__avatar {
+         margin: 20px 0 50px;
+         // margin-top: 20px;
+         margin-bottom: 50px;
+         width: 150px;
+         flex: 0 0 150px;
+      }
+      &__rank {
+         width: 150px;
+         height: 150px;
+         & span {
+            bottom: 0px;
+         }
+      }
+      &__progress {
+         height: auto;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+      }
+      &__comment {
+         padding: 20px 5px;
+      }
+   }
+   .comment {
+      &__title {
+         flex-direction: column;
+         gap: 20px;
+      }
+      &__pagination {
+         align-self: center;
+      }
+      &__ava {
+         flex: 0 0 30px;
+         height: 30px;
+         font-size: 10px;
+      }
+      &__new {
+         & input {
+            font-size: 14px;
+         }
+      }
+      &__text {
+         font-size: 14px;
+      }
+   }
+   .progress {
+      &__text {
+         padding: 5px 0;
+      }
+      &__title {
+         font-size: 40px !important;
+      }
+
+      &__block {
+         padding-bottom: 20px;
+         // height: 60px;
+         height: auto;
+         font-size: 16px;
+         font-weight: 400;
+      }
+
+      &__img {
+         flex: 0 0 70px;
+         width: 70px;
+         // width: 120px;
+         height: 60px;
+         border-radius: 20px;
+
+         // & img {}
+
+         & img {
+            height: 55px;
+            // height: 100%;
+            // width: 100%;
+            object-fit: cover;
+
+            // object-position: center;
+            // margin: 0 auto;
+         }
+      }
+      &__date {
+         margin-right: 0;
+         margin-left: 15px;
+      }
+   }
+   .statistic {
+      &__ava {
+         width: 80px;
+         height: 80px;
+      }
+      &__name {
+         font-size: 20px;
+         margin-left: 10px;
+      }
+      &__rank {
+         margin-left: 0px;
+         width: 120px;
+         height: 120px;
+         & img {
+            top: 10px;
+         }
+      }
+      &__btn {
+         font-size: 15px;
+      }
+   }
+   .statistic-table {
+      &__table {
+         grid-template-columns: repeat(6, auto);
+      }
+      & td {
+         font-size: 16px;
+      }
+      & th:nth-child(2),
+      & td:nth-child(2) {
+         display: none;
+      }
+
+      & th {
+         font-size: 15px;
+         height: 45px;
+         &:last-child {
+            & img {
+               height: auto;
+               width: 40px;
+            }
+         }
+         & img {
+            height: 25px;
+         }
+      }
+      & td {
+         margin-top: 20px;
+         height: 70px;
+         font-size: 14px;
+      }
+
+      &__img {
+         width: 70px;
+         height: 20px;
+         & div {
+            width: 15px;
+            height: 15px;
+         }
+      }
+   }
+   .upgrade {
+      &__banner {
+         margin: 0;
+      }
+
+      &__title {
+         font-size: 70px;
+      }
+      &__subtitle {
+         font-size: 18px;
       }
    }
 }
@@ -573,6 +1414,23 @@
             }
          }
       }
+      &__team-item_single {
+         width: 300px;
+      }
+   }
+   .map {
+      &__team {
+         width: 300px;
+         padding: 23px 0px;
+      }
+   }
+
+   .team {
+      &__logo {
+         &_single {
+            flex: 0 0 120px;
+         }
+      }
    }
    .myfriends-list {
       &__block {
@@ -611,6 +1469,50 @@
          display: none;
       }
    }
+   .how {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto 1fr auto 1fr auto 1fr auto;
+      &__img {
+         margin-top: 40px;
+         &_width {
+            margin-top: 40px;
+         }
+      }
+   }
+   .question {
+      font-size: 16px;
+      &__point {
+         margin-right: 15px;
+      }
+
+      &__answer {
+         font-size: 12px;
+      }
+   }
+   .ranked {
+      & td {
+         background-color: inherit;
+      }
+
+      & th:nth-child(4),
+      & th:nth-child(5) {
+         visibility: hidden;
+         width: 0;
+
+         // display: none;
+      }
+      & td:nth-child(4),
+      & td:nth-child(5) {
+         visibility: hidden;
+         width: 0;
+         margin-left: -5px;
+
+         // display: none;
+      }
+   }
+   .best-players {
+      width: 100%;
+   }
 }
 @media (max-width: 350px) {
    .footer {
@@ -633,6 +1535,17 @@
          margin-top: 30px;
       }
    }
+   .private {
+      margin: 0;
+      padding: 30px 5px 60px 5px;
+      &__title {
+         font-size: 28px;
+      }
+      &__text {
+         margin-top: 30px;
+      }
+   }
+
    .maps {
       &__grid-item {
          width: 250px;
