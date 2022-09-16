@@ -3,9 +3,11 @@ const questions = document.querySelectorAll('.question-block')
 
 cards.forEach((element, key, array) => {
    if (key !== 0) {    //exception first card
-      element.addEventListener('click', () => {
-         element.classList.toggle('active')
-      })
+      if (element !== null) {
+         element.addEventListener('click', () => {
+            element.classList.toggle('active')
+         })
+      }
    }
 })
 
@@ -30,14 +32,33 @@ function closeModal() {
    modalSale.classList.add('hidden');
 }
 
-saleAllBtn.addEventListener('click', () => {
-   openModal();
-})
+if (saleAllBtn !== null) {
+   saleAllBtn.addEventListener('click', () => {
+      openModal();
+   })
+}
+if (cancelBtn !== null) {
 
-cancelBtn.addEventListener('click', () => {
-   closeModal();
-})
+   cancelBtn.addEventListener('click', () => {
+      closeModal();
+   })
+}
+if (closeBtn !== null) {
 
-closeBtn.addEventListener('click', () => {
-   closeModal();
-})
+   closeBtn.addEventListener('click', () => {
+      closeModal();
+   })
+}
+
+
+////Burger
+
+const burgerBtn = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger-menu');
+
+burgerBtn.addEventListener('click', () => {
+   console.log('click');
+   burgerBtn.classList.toggle('active');
+   burgerMenu.classList.toggle('active');
+}
+)

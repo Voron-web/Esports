@@ -6,6 +6,7 @@
    display: flex;
    align-items: center;
    &__content {
+      position: relative;
       height: 100%;
       width: 100%;
       display: flex;
@@ -70,6 +71,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      &_logout {
+         justify-content: center;
+      }
    }
 
    &__search {
@@ -278,10 +282,12 @@
 }
 
 .burger {
+   display: none;
    position: relative;
    width: 25px;
    height: 25px;
    margin-left: 20px;
+   cursor: pointer;
    & div {
       position: absolute;
       width: 100%;
@@ -289,6 +295,7 @@
       border-radius: 1.5px;
       background: $color_white;
       left: 0;
+      transition: 0.5s;
       &:first-child {
          top: 3px;
       }
@@ -298,6 +305,164 @@
       }
       &:last-child {
          bottom: 3px;
+      }
+   }
+   &.active {
+      & div {
+         &:first-child {
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+         }
+         &:nth-last-child(2) {
+            opacity: 0;
+         }
+         &:last-child {
+            bottom: 50%;
+            transform: translate(0, 50%) rotate(-45deg);
+         }
+      }
+   }
+}
+.burger-menu {
+   padding: 20px 20px 40px;
+   // display: none;
+   position: absolute;
+   bottom: 0;
+   right: -20px;
+   transform: translate(110%, 100%);
+   width: 320px;
+   background-color: $color_bg-block;
+   display: flex;
+   flex-direction: column;
+   z-index: 3;
+   border-radius: 0 0 30px 30px;
+   transition: transform 0.7s;
+   &__user-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+   }
+   &.active {
+      transform: translate(0, 100%);
+   }
+
+   &__user {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__wallet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 17px;
+      position: relative;
+      padding: 5px 6px 5px 4px;
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      background-color: $color_bg-light;
+      & span {
+         padding-right: 8px;
+      }
+   }
+
+   &__ring {
+   }
+
+   &__info {
+      margin-bottom: 20px;
+      width: 272px;
+      height: 40px;
+      padding: 0 13px;
+      background-color: $color_bg-light;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+      // gap: 23px;
+      & > svg {
+         width: 15px;
+         height: 15px;
+      }
+      border-radius: 78px;
+   }
+
+   &__search-block {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+   }
+
+   &__search {
+   }
+
+   &__group {
+   }
+
+   &__menu {
+      & ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         font-size: 20px;
+      }
+   }
+
+   &__btn-block {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+   &__btn-signup {
+      // margin-right: 33px;
+      padding: 0 17px;
+      height: 50px;
+      color: $color_black;
+      background-color: $color_bg-light;
+      border-radius: 78px;
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      & svg {
+         // margin: auto 0;
+         margin-left: 5px;
+         width: 30px;
+         height: 30px;
+      }
+      & a {
+         display: flex;
+         align-items: center;
+      }
+   }
+
+   &__btn-signin {
+      // margin-right: 205px;
+      // margin-right: auto;
+      padding: 0 20px 0 26px;
+      height: 50px;
+      border-radius: 78px;
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      background-color: $color_bg-block-dark;
+      border: 2px solid $color_bg-light;
+      & a {
+         display: flex;
+         align-items: center;
+      }
+      & img {
+         width: 30px;
+         height: 30px;
+         margin-left: 20px;
       }
    }
 }

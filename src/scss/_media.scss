@@ -328,7 +328,9 @@
          display: none;
       }
    }
-
+   .burger {
+      display: block;
+   }
    .footer {
       &__content {
          flex-direction: column;
