@@ -46,11 +46,14 @@ body {
    height: 100%;
 }
 .container {
+   position: relative;
    padding: 0 18px;
+   max-width: 100vw;
    width: 100%;
    margin: 0 auto;
    max-width: 1884px;
    height: 100%;
+   // overflow-y: hidden;
 }
 main {
    flex: 0 1 100%;

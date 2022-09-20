@@ -55,10 +55,12 @@ if (closeBtn !== null) {
 
 const burgerBtn = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.burger-menu');
+const headerBlock = document.querySelector('.header')
 
 burgerBtn.addEventListener('click', () => {
    console.log('click');
    burgerBtn.classList.toggle('active');
    burgerMenu.classList.toggle('active');
+   headerBlock.classList.toggle('active');
 }
 )
